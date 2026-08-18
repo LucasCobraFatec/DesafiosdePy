@@ -1,9 +1,12 @@
-num = (input('Digite um numero entre 0 e 9999: '))
+num = int(input('Digite um numero entre 0 e 9999: '))
 
+u = num //1 %10
+d=num //10 %10
+c=num //100 %10
+m=num //1000 %10
 
-valores = num.split()
-
-print('unidade: {}'.format(valores[0][3]))
-print('dezena: {}'.format(valores[0][2]))
-print('centena: {}'.format(valores[0][1]))
-print('milhar: {}'.format(valores[0][0]))
+print('Analisando numero {}'.format(num))
+print('Unidade: {}'.format(u))
+print('Dezena: {}'.format(d))
+print('Centena: {}'.format(c))
+print('Milhar: {}'.format(m))
